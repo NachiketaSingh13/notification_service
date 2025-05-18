@@ -127,7 +127,7 @@ python worker.py
 
 ##  API Endpoints
 
-###  Send Notification
+###  Send Notification (tested using Postman)
 
 ```
 POST /api/notifications
