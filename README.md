@@ -58,14 +58,6 @@ python -m venv env
 env\Scripts\activate
 ```
 
-### 3. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-> Example `requirements.txt`:
-
 ```
 Django>=4.2
 djangorestframework
@@ -75,7 +67,7 @@ pika
 
 ---
 
-### 4. Setup PostgreSQL Database
+### 3. Setup PostgreSQL Database
 
 * Create a database named `notification_db` using pgAdmin or psql
 * Update `backend/settings.py`:
@@ -95,7 +87,7 @@ DATABASES = {
 
 ---
 
-### 5. Run Migrations
+### 4. Run Migrations
 
 ```bash
 python manage.py makemigrations
@@ -104,7 +96,7 @@ python manage.py migrate
 
 ---
 
-### 6. Start Django Server
+### 5. Start Django Server
 
 ```bash
 python manage.py runserver
@@ -112,7 +104,7 @@ python manage.py runserver
 
 ---
 
-### 7. Start RabbitMQ (Using Docker)
+### 6. Start RabbitMQ (Using Docker)
 
 ```bash
 docker run -d --hostname rabbitmq --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
@@ -123,7 +115,7 @@ docker run -d --hostname rabbitmq --name rabbitmq -p 5672:5672 -p 15672:15672 ra
 
 ---
 
-### 8. Run the Worker Script
+### 7. Run the Worker Script
 
 In a new terminal (with venv activated):
 
