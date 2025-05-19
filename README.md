@@ -47,8 +47,8 @@ notification_service/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/notification-service.git
-cd notification-service
+git clone https://github.com/yourusername/notification_service.git
+cd notification_service
 ```
 
 ### 2. Create & Activate Virtual Environment
